@@ -1,0 +1,47 @@
+.center {
+    width: 100%;
+    height: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center img {
+    width: 25em;
+}
+
+.cent-cont {
+    padding-left: 50px;
+}
+
+.cent-cont h1 {
+    font-size: 65px;
+    letter-spacing: 3px;
+    color: #c9f9ff;
+    text-shadow: 0 0 25px #03e9f4,
+    0 0 55px #03e9f4;
+    margin: 0;
+}
+
+.buttons {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    padding: 20px 25px;
+    font-size: 25px;
+}
+
+.buttons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+

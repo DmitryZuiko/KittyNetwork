@@ -10,7 +10,6 @@ export const Authorization: React.FC = () => {
     const [login, setLogin] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // const [isAuth, setAuth] = useState(false);
 
     const authHandler = async(e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
@@ -24,6 +23,11 @@ export const Authorization: React.FC = () => {
         } else {
             alert(result.message);
         }
+    }
+
+    const goToLogin = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        history.push('/login');
     }
 
     return (
@@ -58,8 +62,12 @@ export const Authorization: React.FC = () => {
                     href="/#"
                     className="auth-reg"
                     onClick={authHandler}
-                >Sign in</a>
-                <a className="move1" href="/login">I have an account</a>
+                >Sign up</a>
+                <a
+                    className="move1"
+                    href="/#"
+                    onClick={goToLogin}
+                >I have an account</a>
             </form>
         </div>
     )

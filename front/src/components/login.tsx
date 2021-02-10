@@ -53,6 +53,11 @@ export const Login: React.FC = () => {
         }
     }
 
+    const goToAuth = (e: React.MouseEvent<HTMLAnchorElement>) => {
+        e.preventDefault();
+        history.push('/auth');
+    }
+
     return (
         <div className="login-box">
              <h2>Login</h2>
@@ -78,7 +83,11 @@ export const Login: React.FC = () => {
                     href="/#"
                     onClick={loginHandler}
                 >Log in</a>
-                <a className="move2" href="/auth">I don't have an account</a>
+                <a
+                    className="move2"
+                    href="/#"
+                    onClick={goToAuth}
+                >I don't have an account</a>
             </form>
         </div>
     )

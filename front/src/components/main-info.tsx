@@ -31,7 +31,7 @@ export const MainInfo: React.FC = () => {
         e.preventDefault();
         const conf = window.confirm("Are you sure you want to log out");
         if (conf) {
-            history.push("/login");
+            history.push("/");
             localStorage.removeItem("token");
             dispatch({type: "CLEAN_USER"});
         }
