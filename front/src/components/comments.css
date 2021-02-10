@@ -1,0 +1,29 @@
+.comment {
+    padding: 10px 0;
+    display: flex;
+    border-bottom: 1px solid #bed1d7;
+}
+
+.com-cont {
+    margin-left: 10px;
+}
+
+.comment-user-logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.comment-user-login {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.comment-user-text {
+    word-break: break-all;
+    font-size: 14px;
+    color: black;
+    margin-top: 7px;
+}

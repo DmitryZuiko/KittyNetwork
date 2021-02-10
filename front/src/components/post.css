@@ -1,0 +1,116 @@
+.no-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.empty-cat{
+    padding: 230px 0 30px;
+}
+
+.empty-text {
+    text-align: center;
+    font-size: 25px;
+}
+
+.post {
+    margin-top: 25px;
+    background: linear-gradient(#c3dafd, #e6efff);
+    border-radius: 5px;
+}
+
+.post-container {
+    margin: auto;
+    padding: 20px 0;
+    width: 90%;
+}
+
+.post-user-info {
+    display: flex;
+}
+
+.post-user-name {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px 0 0 10px;
+}
+
+.post-user {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.post-image {
+    margin-left: auto;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.post-text {
+    padding: 10px 0;
+    color: black;
+    font-size: 19px;
+}
+
+.like-cont {
+    margin-top: 10px;
+    display: flex;
+}
+
+.like-button {
+    display: inline-block;
+    position: relative;
+    font-size: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.like-button::before {
+     font-size: 3em;
+     color: #000;
+     content: '\2764';
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.like-button::after {
+     font-size: 3em;
+     color: #ff3252;
+     content: '\2764';
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%) scale(0);
+     transition: transform 0.1s;
+}
+
+.like-button.liked::after {
+     transform: translate(-50%, -50%) scale(1.0);
+}
+
+.likes {
+    padding: 8px 0 0 15px;
+    color: black;
+}
+
+.comment-icon {
+    width: 1.2em;
+    margin-left: 30px;
+    margin-top: 7px;
+}
+
+.comments-count {
+    margin: 7px 0 0 7px;
+    color: black;
+}
+
+.comment-info {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #bed1d7;
+}
